@@ -6,6 +6,7 @@ import Dropdown from './Dropdown';
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -25,7 +26,24 @@ function Navbar() {
                             Home
                         </Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                            Services <i className='fas fa-caret-down' />
+                        </Link>
+                        {dropdown && <Dropdown />}
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/contact-us' className='nav-links' onClick={closeMobileMenu}>
+                            Contact us
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            Sign Up
+                        </Link>
+                    </li>
                 </ul>
+                <Button /> 
             </nav>
         </>
     );
