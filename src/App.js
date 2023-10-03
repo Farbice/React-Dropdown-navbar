@@ -1,15 +1,21 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router} from 'react-router-dom';
-import Page from './components/pages/Page';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Consulting from './components/pages/Consulting';
+import ContactUs from './components/pages/ContactUs';
+import Home from './components/pages/Home';
 
 function App() {
 
   return (
     <Router>
       <Navbar />
-      <Page />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/consulting" element={<Consulting />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
     </Router>
   );
 }
