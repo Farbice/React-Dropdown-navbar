@@ -7,9 +7,72 @@
 
 .pageName {
   display: flex;
-  height: 90vh;
+  height: 92vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
-  color:rgb(140, 100, 41)
+  font-size: 5rem;
+  color:rgb(255, 255, 255)
+}
+
+.sign-up {
+  background-image: url(../src/images/epic_native-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.products {
+  background-image: url(../src/images/epic_calathea.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services {
+  background-image: url(../src/images/epic_monstera.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-us {
+  background-image: url(../src/images/epic_lake_top.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.development {
+  background-image: url(../src/images/epic_sea-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  background-image: url(../src/images/epic_paddle_top.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.consulting {
+  background-image: url(../src/images/epic_fujisan-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.marketing {
+  background-image: url(../src/images/epic_wave-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.design{
+  background-image: url(../src/images/epic_bird-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
